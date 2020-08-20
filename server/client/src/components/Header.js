@@ -8,32 +8,19 @@ function Header() {
   return (
     <Nav>
       <NavHeader>
-        <NavLeft>Stylagram</NavLeft>
+        <NavLeft>About Us</NavLeft>
  
-        <NavCenter>
-          <Input type="text" placeholder="Search" />
-        </NavCenter>
+        <NavCenter>RSVP</NavCenter>
  
-        <NavRight>
-          <MenuLink href="#">
-            
-          </MenuLink>
- 
-          <MenuLink href="#">
-            
-          </MenuLink>
- 
-          <MenuLink href="#">
-            
-          </MenuLink>
-        </NavRight>
+        <NavRight>Hotel Info</NavRight>
+
       </NavHeader>
     </Nav>
   );
 }
  
 export default Header;
- 
+
 const Nav = styled.div`
   background-color: #0002;
   border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
@@ -58,32 +45,8 @@ const NavCenter = styled.div`
   text-align: center;
 `;
  
-const Input = styled.input`
-  font-size: 16px;
-  border: solid 1px #dbdbdb;
-  border-radius: 3px;
-  color: #262626;
-  padding: 7px 33px;
-  border-radius: 3px;
-  color: #999;
-  cursor: text;
-  font-size: 14px;
-  font-weight: 300;
-  text-align: center;
-  background: #fafafa;
- 
-  &:active,
-  &:focus {
-    text-align: left;
-  }
-`;
- 
 const NavRight = styled.div`
   width: 33.333%;
   text-align: right;
- 
-  svg {
-    margin-right: 20px;
-  }
 `;
  
